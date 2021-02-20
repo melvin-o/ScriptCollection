@@ -54,6 +54,7 @@ winget install --id Nadeo.TrackManiaNationsForever --silent
 winget install --id WireGuard.WireGuard --silent
 winget install --id Microsoft.WindowsTerminal --silent
 winget install --id GitHub.GitHubDesktop --silent
+winget install --id TimKosse.FileZillaClient --silent
 
 ###################################################################################################
 <#Cleanup#>
