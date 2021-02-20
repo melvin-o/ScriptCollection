@@ -39,21 +39,14 @@ winget install --id Mozilla.Firefox --silent
 winget install --id Google.Chrome --silent
 winget install --id KeePassXCTeam.KeePassXC --silent
 winget install --id Notepad++.Notepad++ --silent
-winget install --id OBSProject.OBSStudio --silent
-winget install --id Oracle.VirtualBox --silent
 winget install --id Signal.Signal --silent
-winget install --id Valve.Steam --silent
 winget install --id SumatraPDF.SumatraPDF --override "-install -s -with-filter -with-preview"
-winget install --id TeamSpeakSystems.TeamSpeakClient --silent
 winget install --id VideoLAN.VLC --silent
-winget install --id LibreOffice.LibreOffice --silent
 winget install --id Axosoft.GitKraken --silent
 winget install --id Rufus.Rufus --silent
 winget install --id BrutalChess.BrutalChess --silent
-winget install --id Nadeo.TrackManiaNationsForever --silent
 winget install --id WireGuard.WireGuard --silent
 winget install --id Microsoft.WindowsTerminal --silent
-winget install --id GitHub.GitHubDesktop --silent
 winget install --id TimKosse.FileZillaClient --silent
 
 ###################################################################################################
@@ -67,4 +60,7 @@ Remove-Item -Path $DownloadFolder -Recurse -Force
 Remove-MpPreference -ExclusionPath $DownloadFolder
 
 #Remove Windows Package Manager
-Get-AppXPackage Microsoft.DesktopAppInstaller | Remove-AppXPackage
+#Get-AppXPackage Microsoft.DesktopAppInstaller | Remove-AppXPackage
+
+#Reboot
+Restart-Computer -Force
