@@ -59,8 +59,5 @@ Remove-Item -Path $DownloadFolder -Recurse -Force
 #Remove Windows Defender exclusion
 Remove-MpPreference -ExclusionPath $DownloadFolder
 
-#Remove Windows Package Manager
-#Get-AppXPackage Microsoft.DesktopAppInstaller | Remove-AppXPackage
-
 #Reboot
 Restart-Computer -Force
