@@ -16,6 +16,9 @@ $PackageManagerAppxBundleFileLocation = "$DownloadFolder\PackageManager.appxbund
 <#Preperations#>
 ###################################################################################################
 
+#Use TLS 1.2
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 #Create temporary folder to store downloaded files
 New-Item -Path $DownloadFolder -ItemType Directory -Force
 
