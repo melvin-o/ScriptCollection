@@ -9,7 +9,7 @@ $TutanotaDownloadLink = "https://mail.tutanota.com/desktop/tutanota-desktop-win.
 $TutanotaFileLocation = "$DownloadFolder\tutanota-desktop-win.exe"
 
 #Set variables for the current version of Windows Package Manager (Preview) | Needs to be updated when new version is released!
-$PackageManagerAppxBundleUri = "https://github.com/microsoft/winget-cli/releases/download/v-0.2.10771-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle"
+$PackageManagerAppxBundleUri = "https://github.com/microsoft/winget-cli/releases/download/v-0.2.10971-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle"
 $PackageManagerAppxBundleFileLocation = "$DownloadFolder\PackageManager.appxbundle"
 
 ###################################################################################################
@@ -36,19 +36,14 @@ Start-Process -FilePath $TutanotaFileLocation -ArgumentList @("/allusers", "/S")
 
 winget install --id 7zip.7zip --silent
 winget install --id Mozilla.Firefox --silent
-winget install --id Google.Chrome --silent
-winget install --id KeePassXCTeam.KeePassXC --silent
+winget install --id Bitwarden.Bitwarden --silent
 winget install --id Notepad++.Notepad++ --silent
 winget install --id Signal.Signal --silent
 winget install --id SumatraPDF.SumatraPDF --override "-install -s -with-filter -with-preview"
 winget install --id VideoLAN.VLC --silent
-winget install --id Rufus.Rufus --silent
-winget install --id WireGuard.WireGuard --silent
 winget install --id Microsoft.WindowsTerminal --silent
 winget install --id WinSCP.WinSCP --silent
 winget install --id GitHub.Atom --silent
-winget install --id OBSProject.OBSStudio --silent
-winget install --id Oracle.VirtualBox --silent
 
 ###################################################################################################
 <#Cleanup#>
