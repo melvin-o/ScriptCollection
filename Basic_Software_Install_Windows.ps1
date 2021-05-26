@@ -9,7 +9,11 @@ $TutanotaDownloadLink = "https://mail.tutanota.com/desktop/tutanota-desktop-win.
 $TutanotaFileLocation = "$DownloadFolder\tutanota-desktop-win.exe"
 
 #Set variables for the current version of Windows Package Manager (Preview) | Needs to be updated when new version is released!
+<<<<<<< HEAD
 $PackageManagerAppxBundleUri = "https://github.com/microsoft/winget-cli/releases/download/v1.0.11451/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle"
+=======
+$PackageManagerAppxBundleUri = "https://github.com/microsoft/winget-cli/releases/download/v-0.3.11201-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.appxbundle"
+>>>>>>> 7cb2759a1a343bc482ad1a637b2f87ae9c5ebd48
 $PackageManagerAppxBundleFileLocation = "$DownloadFolder\PackageManager.appxbundle"
 
 ###################################################################################################
